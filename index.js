@@ -1,19 +1,24 @@
 $(document).ready(function() {
+    if($(window).width()>=1250)
+        {
+            $('.wraper').css({'width': 1200+"px", 'position': "absolute", 'left': 50+"%", 'margin-left': -600+"px"});
+        }
     $('input[type=radio][name=big-menu-radio]').change(function() {
         if (this.value == 'tree')
             {
                 $('.big-menu').css("background-image", "url(tree.jpg)");
             }
-        else if (this.value == 'ball') 
+        else if (this.value == 'winter') 
         {
             $('.big-menu').css("background-image", "url(winter.jpg");
         }
-        else if (this.value == 'flower') 
+        else if (this.value == 'cleaner') 
         {
            $('.big-menu').css("background-image", "url(cleaner.jpg");
         }
     });
 });
+
 $(window).resize(function(){
     if($(window).width()>=1300)
     {
@@ -37,18 +42,21 @@ $(window).resize(function(){
             if($(window).width()<840)
             {
                $('.team-about>li').css({'display': 'inline-block', 'padding': 5+"%"});
+               $('.features-list>li').css({'display': 'table-cell', 'padding-right': 10+"px"});
                 
                 if($(window).width()<770)
                     {
+                    $('.features-list>li').css({'display': 'inline-block'});
                     $('.contacts').css({'height': 600+'px'});
                     $('.contact-info').css({'top': 320+'px', 'width': 'inherit'});
                     $('.form').css({'top': 20+'px', 'left': 55+'px'});
                     $('.main-info').css({'left': 70+'px'});
-                    
-                    if($(window).width()<550)
+                    $('.social-footer>li>a').css({'padding': 5+'px'});
+                        
+                    if($(window).width()<560)
                         {
                         $('.main-info').css({'left': 5+'%','width': 400+'px'});
-                        $('.bg-main-info').css({'height': 170+'px'});  
+                        $('.bg-main-info').css({'height': 170+'px'}); $('.social-footer>li>a').css({'padding': 0});
                         $('.radio').css({'left': 80+'%'});
                             
                                 if($(window).width()<490)
@@ -94,11 +102,14 @@ $('.to-up').click(function()
     });
 });
 
-//$(".team-about").hover(function(){
-//     $( this ).find(".shadow1").css({'opacity': 0.4});
-//},function(){
-//    $( this ).find(".shadow1").css({'opacity': 0});
-//});
+$(function(){
+$('a[href^="#"]').click(function(){
+var target = $(this).attr('href');
+$('html, body').animate({scrollTop: $(target).offset().top}, 800);
+return false; 
+}); 
+});
+
 
 
 

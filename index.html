@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
     <script src="jquery-3.3.1.js" defer></script>
     <script src="index.js" defer></script>
-    <script src="fancybox-master/dist/jquery.fancybox.min.js" defer></script>
-    <link rel="stylesheet" href="fancybox-master/dist/jquery.fancybox.min.css" defer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" defer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" defer></script>
 </head>
 
 <body>
@@ -17,14 +17,15 @@
     <div class="wraper fonts">
         <header class="header">
             <ul class="header-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Work</a></li>
-                <li><a href="">Team</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Features</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#work">work</a></li>
+                <li><a href="#about-work">Services</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <a name="home"></a>
             <div class="big-menu">
                 <div class="main-info">
                     <h3 class="fonts">welcome to our marketplace</h3>
@@ -36,12 +37,13 @@
                 </div>
                 <div class="radio">
                     <input type="radio" name="big-menu-radio" value="tree" checked>
-                    <input type="radio" name="big-menu-radio" value="ball">
-                    <input type="radio" name="big-menu-radio" value="flower">
+                    <input type="radio" name="big-menu-radio" value="winter">
+                    <input type="radio" name="big-menu-radio" value="cleaner">
                 </div>
             </div>
         </header>
-        <div class="modest">
+        <div class="about">
+           <a name="about"></a>
             <h2 class="title">we are modest</h2>
             <div class="col-left">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis similique voluptate hic aperiam at laboriosam suscipit aliquid fugiat, eos ipsa consectetur est, iure qui animi amet, repudiandae odit mollitia dolore.</p>
@@ -72,33 +74,31 @@
             </div>
         </div>
         <div class="team">
+           <a name="team"></a>
             <h2 class="title">meet the team</h2>
             <div>
                 <ul class="team-about"> 
-                    <li><img src="face1.png" alt="" class="face1">
+                    <li><img src="face1.png" alt="Judith Gillette. Graphic Desinger">
                         <p>Judith Gillette</p>
                         <p>Graphic Desinger</p>
-                        <div class="shadow1"></div>
                     </li>
-                    <li><img src="face2.png" alt="" class="face">
+                    <li><img src="face2.png" alt="Paul Torres. Head of Development">
                         <p>Paul Torres</p>
                         <p>Head of Development</p>
-                        <div class="shadow"></div>
                     </li>
-                    <li><img src="face3.png" alt="" class="face">
+                    <li><img src="face3.png" alt="Odetta Gillette. SEO and Founder">
                         <p>Odetta Gillette</p>
                         <p>SEO and Founder</p>
-                        <div class="shadow"></div>
                     </li>
-                    <li><img src="face4.png" alt="" class="face">
+                    <li><img src="face4.png" alt="Delores Reed. Client Service Director">
                         <p>Delores Reed</p>
                         <p>Client Service Director</p>
-                        <div class="shadow"></div>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="gallery-block">
+          <a name="work"></a>
            <h2 class="title">lovely work</h2>
             <ul class="gallery">
                 <li><a data-fancybox="gallery" href="imgBig/big1.jpg"><img src="imgSmall/small1.gif"></a></li>
@@ -114,6 +114,7 @@
             <input type="button" class="show_button fonts" value="show me more">
         </div>
         <div class="about-work">
+            <a name="about-work"></a>
              <h2 class="title">what we do</h2>
              <div class="about-work-list">
                  <div>
@@ -139,23 +140,24 @@
              </div>
         </div>
         <div class="features">
+           <a name="features"></a>
             <h2 class="title">features</h2>
             <div>
                 <ul class="features-list">
                     <li>
-                        <img src="features/technology.jpg" alt="">
+                        <img src="features/technology.jpg" alt="modern technology LOGO">
                         <p>modern technology</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quis, placeat quisquam vero velit ex ipsum.</p>
                     </li>
                     <li>
-                        <img src="features/logo.jpg" alt="">
+                        <img src="features/logo.jpg" alt="Elegant Logos">
                         <p>Elegant Logos</p>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quis, placeat quisquam vero velit ex ipsum.
                         </p>
                     </li>
                     <li>
-                        <img src="features/creativ.jpg" alt="">
+                        <img src="features/creativ.jpg" alt="creative approach">
                         <p>creative approach</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quis, placeat quisquam vero velit ex ipsum.</p>
                     </li>
@@ -163,6 +165,7 @@
             </div>
         </div>
         <div class="contacts-over-the-mup">
+           <a name="contact"></a>
             <h2 class="title">stay in touch</h2>
         </div>
         <div class="map">
